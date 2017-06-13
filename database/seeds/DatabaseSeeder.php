@@ -12,5 +12,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        $this->call(JaarSeeder::class);
+        $this->call(KeuzevakkenSeeder::class);
+        $this->call(SpecialisatieSeeder::class);
+        $this->call(SpecialisatievakkenSeeder::class);
+        $this->call(VerplichtenvakkenSeeder::class);
     }
 }

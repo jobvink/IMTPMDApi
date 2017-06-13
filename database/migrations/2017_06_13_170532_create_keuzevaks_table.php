@@ -17,7 +17,7 @@ class CreateKeuzevaksTable extends Migration
             $table->increments('id');
             $table->string('code');
             $table->string('naam');
-            $table->text('beschrijving');
+            $table->integer('ec');
             $table->integer('jaar_id');
             $table->timestamps();
         });
