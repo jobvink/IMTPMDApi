@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('jaar', 'JaarController', ['only' => ['index' , 'show']]);
+Route::resource('blok', 'BlokController', ['only' => ['index' , 'show']]);
+Route::resource('specialisatie', 'SpecialisatieController', ['only' => ['index' , 'show']]);
+Route::resource('specialisatievak', 'SpecialisatievakController', ['only' => ['index' , 'show']]);
+Route::resource('verplichtvak', 'VerplichtvakController', ['only' => ['index' , 'show']]);
+Route::resource('keuzevak', 'KeuzevakController', ['only' => ['index' , 'show']]);
