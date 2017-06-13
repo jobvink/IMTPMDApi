@@ -15,6 +15,10 @@ class CreateKeuzevaksTable extends Migration
     {
         Schema::create('keuzevaks', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('code');
+            $table->string('naam');
+            $table->text('beschrijving');
+            $table->integer('jaar_id');
             $table->timestamps();
         });
     }

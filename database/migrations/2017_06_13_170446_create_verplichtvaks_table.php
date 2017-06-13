@@ -15,6 +15,10 @@ class CreateVerplichtvaksTable extends Migration
     {
         Schema::create('verplichtvaks', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('code');
+            $table->string('naam');
+            $table->text('beschrijving');
+            $table->integer('jaar_id');
             $table->timestamps();
         });
     }

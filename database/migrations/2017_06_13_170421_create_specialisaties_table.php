@@ -15,6 +15,8 @@ class CreateSpecialisatiesTable extends Migration
     {
         Schema::create('specialisaties', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('code');
+            $table->string('naam');
             $table->timestamps();
         });
     }
