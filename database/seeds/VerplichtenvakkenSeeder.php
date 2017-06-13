@@ -140,6 +140,57 @@ class VerplichtenvakkenSeeder extends Seeder
                 'jaar_id' => 1,
                 'periode_id' => 4,
             ],
+            [
+                'code' => 'IRDBMS',
+                'naam' => 'Relationele databasemanagementsystemen',
+                'ec' => 3,
+                'jaar_id' => 2,
+                'periode_id' => 1,
+            ],
+            [
+                'code' => 'ISCRIPT',
+                'naam' => 'Scripting',
+                'ec' => 3,
+                'jaar_id' => 2,
+                'periode_id' => 2,
+            ],
+            [
+                'code' => 'IQUA',
+                'naam' => 'Studieloopbaanbegeleiding',
+                'ec' => 3,
+                'jaar_id' => 2,
+                'periode_id' => 3,
+            ],
+            [
+                'code' => 'IETH',
+                'naam' => 'Ethiek',
+                'ec' => 3,
+                'jaar_id' => 2,
+                'periode_id' => 4,
+            ],
+
+
+            [
+                'code' => 'ITORG',
+                'naam' => 'Inleiding Organisatiekunde',
+                'ec' => 3,
+                'jaar_id' => 3,
+                'periode_id' => 1,
+            ],
+            [
+                'code' => 'ISEC',
+                'naam' => 'IT Security',
+                'ec' => 3,
+                'jaar_id' => 3,
+                'periode_id' => 2,
+            ],
+            [
+                'code' => 'ISLH',
+                'naam' => 'Studieloopbaanbegeleiding',
+                'ec' => 1,
+                'jaar_id' => 3,
+                'periode_id' => 1,
+            ],
         ]);
     }
 }
