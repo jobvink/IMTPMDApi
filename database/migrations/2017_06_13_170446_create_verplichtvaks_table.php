@@ -19,8 +19,7 @@ class CreateVerplichtvaksTable extends Migration
             $table->string('naam');
             $table->integer('ec');
             $table->integer('jaar_id');
-            $table->integer('periode_id');
-            $table->timestamps();
+            $table->integer('periode');
         });
     }
 

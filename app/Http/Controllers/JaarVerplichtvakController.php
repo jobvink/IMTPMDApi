@@ -2,30 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use App\Keuzevak;
+use App\Jaar;
 use Illuminate\Http\Request;
 
-class KeuzevakController extends Controller
+class JaarVerplichtvakController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($jaar)
     {
-        return Keuzevak::all();
+        //
+        return Jaar::find($jaar)->verplichtevakken;
     }
-
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Keuzevak  $keuzevak
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($keuzevak)
+    public function show($jaar, $id)
     {
-        return Keuzevak::find($keuzevak);
+        //
+        return Jaar::find($jaar)->verplichtevakken->find($id);
     }
 }

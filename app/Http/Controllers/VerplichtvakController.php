@@ -23,8 +23,8 @@ class VerplichtvakController extends Controller
      * @param  \App\Verplichtvak  $verplichtvak
      * @return \Illuminate\Http\Response
      */
-    public function show(Verplichtvak $verplichtvak)
+    public function show($verplichtvak)
     {
-        return $verplichtvak;
+        return Verplichtvak::find($verplichtvak);
     }
 }

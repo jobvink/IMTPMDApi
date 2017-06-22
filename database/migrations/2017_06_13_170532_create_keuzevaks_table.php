@@ -18,7 +18,6 @@ class CreateKeuzevaksTable extends Migration
             $table->string('code');
             $table->string('naam');
             $table->integer('ec');
-            $table->timestamps();
         });
     }
 

@@ -5,28 +5,30 @@ namespace App\Http\Controllers;
 use App\Jaar;
 use Illuminate\Http\Request;
 
-class JaarController extends Controller
+class JaarSpecialisatievakController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($jaar)
     {
         //
-        return Jaar::all();
+        $jaar = Jaar::find($jaar);
+        return $jaar->specialisatievakken;
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Jaar  $jaar
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($jaar, $id)
     {
         //
-        return Jaar::find($id);
+        $jaar = Jaar::find($jaar);
+        return $jaar->specialisatievakken->find($id);
     }
 }

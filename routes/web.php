@@ -11,17 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//
+//Auth::routes();
+//
+//Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::resource('jaaren', 'JaarController', ['only' => ['index' , 'show']]);
+Route::resource('specialisaties', 'SpecialisatieController', ['only' => ['index' , 'show']]);
+Route::resource('specialisatievaken', 'SpecialisatievakController', ['only' => ['index' , 'show']]);
+Route::resource('verplichtevakken', 'VerplichtvakController', ['only' => ['index' , 'show']]);
+Route::resource('keuzevaken', 'KeuzevakController', ['only' => ['index' , 'show']]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('jaaren.specialisatievakken', 'JaarSpecialisatievakController', ['only' => ['index' , 'show']]);
+Route::resource('specialisaties.specialisatievakken', 'SpecialisatieSpecialisatievakController', ['only' => ['index' , 'show']]);
 
-Route::resource('jaar', 'JaarController', ['only' => ['index' , 'show']]);
-Route::resource('blok', 'BlokController', ['only' => ['index' , 'show']]);
-Route::resource('specialisatie', 'SpecialisatieController', ['only' => ['index' , 'show']]);
-Route::resource('specialisatievak', 'SpecialisatievakController', ['only' => ['index' , 'show']]);
-Route::resource('verplichtvak', 'VerplichtvakController', ['only' => ['index' , 'show']]);
-Route::resource('keuzevak', 'KeuzevakController', ['only' => ['index' , 'show']]);
+Route::resource('jaaren.verplichtenvakken', 'JaarVerplichtvakController', ['only' => ['index' , 'show']]);
+

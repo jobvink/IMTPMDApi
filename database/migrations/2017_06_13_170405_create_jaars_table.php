@@ -16,7 +16,6 @@ class CreateJaarsTable extends Migration
         Schema::create('jaars', function (Blueprint $table) {
             $table->increments('id');
             $table->string('beschrijving');
-            $table->timestamps();
         });
     }
 

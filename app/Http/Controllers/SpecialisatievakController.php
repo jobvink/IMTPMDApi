@@ -23,8 +23,8 @@ class SpecialisatievakController extends Controller
      * @param  \App\Specialisatievak  $specialisatievak
      * @return \Illuminate\Http\Response
      */
-    public function show(Specialisatievak $specialisatievak)
+    public function show($specialisatievak)
     {
-        return $specialisatievak;
+        return Specialisatievak::find($specialisatievak);
     }
 }

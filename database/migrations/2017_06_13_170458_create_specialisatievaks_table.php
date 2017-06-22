@@ -20,7 +20,6 @@ class CreateSpecialisatievaksTable extends Migration
             $table->integer('ec');
             $table->integer('jaar_id');
             $table->integer('specialisatie_id');
-            $table->timestamps();
         });
     }
 

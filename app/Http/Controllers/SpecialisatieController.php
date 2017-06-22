@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Specialisatie;
+use App\Specialisatievak;
 use Illuminate\Http\Request;
 
 class SpecialisatieController extends Controller
@@ -23,9 +24,9 @@ class SpecialisatieController extends Controller
      * @param  \App\Specialisatie  $specialisatie
      * @return \Illuminate\Http\Response
      */
-    public function show(Specialisatie $specialisatie)
+    public function show($specialisatie)
     {
-        return $specialisatie;
+        return Specialisatie::find($specialisatie);
     }
 
 }
