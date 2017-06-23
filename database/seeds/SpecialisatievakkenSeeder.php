@@ -431,14 +431,14 @@ class SpecialisatievakkenSeeder extends Seeder
                 'code' => 'IWLS',
                 'naam' => 'Stage',
                 'ec' => 3,
-                'jaar_id' => 2,
+                'jaar_id' => 3,
                 'specialisatie_id' => 3,
             ],
             [
                 'code' => 'IWLA',
                 'naam' => 'Afstudeerverslag',
                 'ec' => 3,
-                'jaar_id' => 2,
+                'jaar_id' => 3,
                 'specialisatie_id' => 3,
             ],
         ]);
